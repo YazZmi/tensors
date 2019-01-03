@@ -1,13 +1,27 @@
 # Ressources
 
-## Définitions
+## Définitions (Wikipedia)
 
+### Technologie
+- [Apprentissage automatique](https://www.wikiwand.com/fr/Apprentissage_automatique)
+- [Neurone artificiel](https://www.wikiwand.com/en/Artificial_neuron)
+- [Réseau de neurones artificiels](https://www.wikiwand.com/fr/R%C3%A9seau_de_neurones_artificiels)
 - [Réseau de neurones à convolution](https://www.wikiwand.com/fr/R%C3%A9seau_neuronal_convolutif)
 - [Réseau de neurones récurrent (RNN)](https://www.wikiwand.com/fr/R%C3%A9seau_de_neurones_r%C3%A9currents)
+- [Réseau de Hopfield](https://www.wikiwand.com/fr/R%C3%A9seau_de_neurones_de_Hopfield)
+- [Réseau bayésien](https://www.wikiwand.com/fr/R%C3%A9seau_bay%C3%A9sien)
+- [Réseau antagoniste génératif](https://www.wikiwand.com/fr/R%C3%A9seaux_antagonistes_g%C3%A9n%C3%A9ratifs)
+- [Rétropropagation du gradient](https://www.wikiwand.com/fr/R%C3%A9tropropagation_du_gradient)
+
+### Outils mathématiques
+
+- [Tenseur](https://www.wikiwand.com/fr/Tenseur)
+- [Régression linéaire](https://www.wikiwand.com/fr/R%C3%A9gression_lin%C3%A9aire)
 
 ## Documentation
 
 - [API de Tensorflow.js](https://js.tensorflow.org/api/0.13.3)
+- :star: [Mémento IA etc.](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463)
 
 ## Jeux de données
 
@@ -23,16 +37,23 @@
 ## Cours
 
 - [Stanford CS229 | Andrw Ng](http://cs229.stanford.edu/syllabus.html)
+  - [> Supports](http://cs229.stanford.edu/notes/)
+- [Algorithme de rétropropagation | Bruno Bouzy - Paris V](http://helios.mi.parisdescartes.fr/~bouzy/Doc/AA1/ReseauxDeNeurones1.pdf)
+- [CNAM](http://cedric.cnam.fr/vertigo/Cours/ml/genindex.html)
+- [Apprentissage par renforcement | Pierre Gérard - Paris XIII](https://lipn.univ-paris13.fr/~gerard/images/user/cours/ar-cours-slides.pdf)
+
+- [Prérequis | Google](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
 
 ## Tutoriels
 
 ### Introduction
 
 - [Introduction à Tensorflow.js](https://medium.com/tensorflow/a-gentle-introduction-to-tensorflow-js-dba2e5257702)
+- [Introduction au Deep Learning | Skymind](https://skymind.ai/wiki/neural-network)
 
 ### Traitement d'images
 
-- [Détection de “corps humains” | Google](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5)
+- [Détection de corps humains | Google](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5)
 
 ### Traitement de la langue
 
