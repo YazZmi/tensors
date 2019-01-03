@@ -1,5 +1,14 @@
 # Ressources
 
+## Définitions
+
+- [Réseau de neurones à convolution](https://www.wikiwand.com/fr/R%C3%A9seau_neuronal_convolutif)
+- [Réseau de neurones récurrent (RNN)](https://www.wikiwand.com/fr/R%C3%A9seau_de_neurones_r%C3%A9currents)
+
+## Documentation
+
+- [API de Tensorflow.js](https://js.tensorflow.org/api/0.13.3)
+
 ## Jeux de données
 
 - [Jeux de données | Wikipedia](https://www.wikiwand.com/en/List_of_datasets_for_machine_learning_research)
@@ -17,9 +26,29 @@
 
 ## Tutoriels
 
+### Introduction
+
+- [Introduction à Tensorflow.js](https://medium.com/tensorflow/a-gentle-introduction-to-tensorflow-js-dba2e5257702)
+
+### Traitement d'images
+
+- [Détection de “corps humains” | Google](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5)
+
+### Traitement de la langue
+
+- [Générateur de textes politiques | OCTO](https://blog.octo.com/des-reseaux-de-neurones-pour-generer-des-discours-politiques/)
+
+## Publications
+
+- [Yann Le Cun](http://yann.lecun.com/exdb/publis/index.html#fulllist)
+
 ## Expérimentations
 
 ## Bibliothèques
 
 - [Tensorflow.js](https://js.tensorflow.org)
 - [Brain.js]
+
+## Divers
+
+- [Homemade ML in Python](https://dev.to/trekhleb/homemade-machine-learning-in-python-4gbj)
