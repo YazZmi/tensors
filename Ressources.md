@@ -58,6 +58,7 @@
 ### Traitement de la langue
 
 - [Générateur de textes politiques | OCTO](https://blog.octo.com/des-reseaux-de-neurones-pour-generer-des-discours-politiques/)
+- [Générateur de pièces des Shakespeare | Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 
 ## Publications
 
