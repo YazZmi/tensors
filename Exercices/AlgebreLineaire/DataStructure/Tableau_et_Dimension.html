@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  </head>
+<body>
+
+    <script>
+
+    //Tableau à 1 Dimension => Scalar est un nombre unique
+	tf.scalar(33).print();
+	const a = tf.scalar(2);
+	const b = tf.scalar(4);
+	const c = tf.scalar(8);
+	a.print();
+	b.print();
+	c.print();
+
+	// Vector => Passer un tableau de valeurs pour créer un vecteur
+	tf.tensor([1, 2, 3, 4]).print();
+
+	// Matrix => tableau 2 dimension 
+  	const d = tf.tensor2d([[1, 2], [3, 2], [4, 5]]);
+	d.print(); 
+
+ 
+
+    // A tensor is a n-dimensional array with n>2 = a =>tableau plus de 2 dimension
+	const shape =[2,3]; // soit 2 row et 3 colunns
+ 	const e = tf.tensor([1.0,2.0,3.0,10.0,20.0,30.0], shape);
+ 	e.print();
+ 	// autre syntaxe
+ 	  /*const e = tf.tensor2d([[1.0, 2.0, 3.0], [10.0, 20.0, 30.0]]);
+	e.print(); */
+
+
+
+
+//TensorFlow.js fournit également des fonctions pratiques pour créer des tenseurs avec toutes les valeurs définies sur 0 (tf.zeros) ou toutes les valeurs sur 1 (tf.ones):
+// 3x5 Tensor with all values set to 0
+const zeros = tf.zeros([3, 5]);
+zeros.print();
+
+ // Operation il en existe plusieurs dans TensorFlow.js
+ //Les tenseurs étant immuables, toutes les opérations renvoient toujours de nouveaux tenseurs et ne modifient jamais les tenseurs en entrée.
+const y = tf.tensor1d([1, 2, 3, 4]);
+const z = tf.tensor1d([10, 20, 30, 40]);
+
+y.add(z).print();  // or tf.add(y,z)
+
+
+//tf.matmul () - Calcule le produit scalaire de deux matrices, A * B.
+const n = tf.tensor2d([1, 2], [1, 2]);
+const p = tf.tensor2d([1, 2, 3, 4], [2, 2]);
+n.matMul(p).print();  // or tf.matMul(n, p)
+    </script>
+  </body>
+</html>

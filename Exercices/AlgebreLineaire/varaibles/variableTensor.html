@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  </head>
+<body>
+
+    <script>
+
+// Les Variables tf.variable () sont initialisé avec un tensor modifiable avec la méthode assign()
+
+ // exemple 1
+const valuesInitial = tf.zeros([5]);
+const maVar = tf.variable(valuesInitial); 
+// tensor initiale
+maVar.print(); // output: [0, 0, 0, 0, 0]
+
+const updatedValues = tf.tensor1d([0, 1, 0, 1, 0]);
+maVar.assign(updatedValues); // update values of biases
+maVar.print(); // output: [0, 1, 0, 1, 0]
+
+//exemple 2
+
+const x = tf.variable(tf.tensor([1, 2, 3]));
+x.assign(tf.tensor([4, 5, 6]));
+
+x.print();
+    </script>
+  </body>
+</html>

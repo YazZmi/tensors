@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  </head>
+<body>
+
+    <script>
+//Le constructeur Tensor principal est la fonction tf.tensor
+
+//TensorFlow.js fournit également des fonctions pratiques pour créer des tenseurs avec toutes les valeurs définies sur 0 (tf.zeros) 
+
+//ou toutes les valeurs sur 1 (tf.ones):
+
+// 3x5 Tensor with all values set to 0
+const zeros = tf.zeros([3, 5]);
+zeros.print();
+
+ // Operation il en existe plusieurs dans TensorFlow.js
+ //Les tenseurs étant immuables, toutes les opérations renvoient toujours de nouveaux tenseurs et ne modifient jamais les tenseurs en entrée.
+const y = tf.tensor1d([1, 2, 3, 4]);
+const z = tf.tensor1d([10, 20, 30, 40]);
+
+y.add(z).print();  // or tf.add(y,z)
+
+
+//tf.matmul () - Calcule le produit scalaire de deux matrices, A * B.
+const n = tf.tensor2d([1, 2], [1, 2]);
+const p = tf.tensor2d([1, 2, 3, 4], [2, 2]);
+n.matMul(p).print();  // or tf.matMul(n, p)
+    </script>
+  </body>
+</html>

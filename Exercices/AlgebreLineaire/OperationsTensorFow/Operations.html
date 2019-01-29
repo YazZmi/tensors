@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  </head>
+<body>
+      Hello
+
+    <script>
+    /** 1 add sub, and mul**/
+ // Operation il en existe plusieurs dans TensorFlow.js
+ //Les tenseurs étant immuables, toutes les opérations renvoient toujours de nouveaux tenseurs et ne modifient jamais les tenseurs en entrée.
+
+ //add
+const a = tf.tensor1d([1, 2, 3, 4]);
+const b = tf.tensor1d([10, 20, 30, 40]);
+
+a.add(b).print();  // or tf.add(y,z)
+
+const a2d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
+const b2d = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);
+
+const a2d_plus_b2d = a2d.add(b2d);
+a2d_plus_b2d.print();
+
+// TensorFlow.js a une API chaînable; vous pouvez appeler des ops sur le résultat des ops ici add et square
+const sq_som = a2d.add(b2d).square();
+sq_som.print();
+
+
+ //sub
+const c = tf.tensor1d([1, 2, 3, 4]);
+const d = tf.tensor1d([10, 20, 30, 40]);
+
+c.sub(d).print();  // or tf.sub(c,d)
+
+const c2d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
+const d2d = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);
+
+const c2d_moins_d2d = c2d.sub(d2d);
+c2d_moins_d2d.print();
+
+ //mul
+const e = tf.tensor1d([1, 2, 3, 4]);
+const f = tf.tensor1d([10, 20, 30, 40]);
+
+e.mul(f).print();  // or tf.mul(e,f)
+
+
+const e2d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
+const f2d = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);
+
+const e2d_moins_f2d = e2d.sub(f2d);
+e2d_moins_f2d.print();
+
+
+
+/*** 2 square ***/
+
+const x = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
+const x_squared = x.square();
+x_squared.print();
+// Output: [[1, 4 ], => soit au carre donc [1*1, 2*2]
+//          [9, 16]]
+
+//tf.matmul () - Calcule le produit scalaire de deux matrices, A * B.
+const n = tf.tensor2d([1, 2], [1, 2]);
+const p = tf.tensor2d([1, 2, 3, 4], [2, 2]);
+n.matMul(p).print();  // or tf.matMul(n, p)
+    </script>
+  </body>
+</html>
